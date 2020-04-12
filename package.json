@@ -1,0 +1,28 @@
+{
+  "name": "dev-ed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingStevenNOS/express-task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KingStevenNOS/express-task/issues"
+  },
+  "homepage": "https://github.com/KingStevenNOS/express-task#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.9.7",
+    "nodemon": "^2.0.3"
+  }
+}
