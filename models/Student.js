@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const mongoosePaginate = require('mongoose-paginate');
 
-
+//Declare a schema for the MongoDB Database
 const StudentSchema = mongoose.Schema({
     //These are the properties of the students
 
@@ -30,6 +31,6 @@ const StudentSchema = mongoose.Schema({
         required: true
     }
 });
-
+StudentSchema.plugin(mongoosePaginate);
 
 module.exports = mongoose.model('Students', StudentSchema);

@@ -8,7 +8,7 @@ const Student = require('../models/Student')
 router.get('/api/v1/students', async (req, res) =>{
     try {
         const students = await Student.find();
-        res.send(students);
+        res.json(students);
     } catch (err) {
         res.json({ message: err})
     }
@@ -45,7 +45,7 @@ router.get('/api/v1/students/:studentId', async (req, res)=> {
     }
 });
 
-router.patch('/api/v1/students/:studentId', async (req,res)=> {
+router.put('/api/v1/students/:studentId', async (req,res)=> {
     try {
         const updatedStudent = await Student.updateOne(
             {studentId: req.params.studentId},

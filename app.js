@@ -16,9 +16,12 @@ mongoose.connect(process.env.DB_CONNECTION,
         useNewUrlParser: true
     },
     ()=> {
-    console.log('Connected to the MongoDB Database');
+    console.log('Connected to the MongoDB Database')
+    console.log('================================');
 });
+const PORT = process.env.DB_PORT
 
 
-
-app.listen(3000, ()=> console.log('Started on http://127.0.0.1:3000'));
+app.listen(PORT, ()=> {console.log(`Started on http://127.0.0.1:${PORT}`)
+console.log('================================');
+});
